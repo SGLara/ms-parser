@@ -20,7 +20,7 @@
     "milliseconds",
     "typescript"
   ],
-  "author": "",
+  "author": "Steven Lara",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.12",
