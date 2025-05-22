@@ -1,15 +1,23 @@
 {
-  "name": "ms-parser",
-  "version": "0.0.1",
+  "name": "@sglara/ms-parser",
+  "version": "1.0.0",
   "description": "A lightweight TypeScript package for parsing time durations into milliseconds",
   "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
     "test": "jest",
     "prepublishOnly": "npm run build"
   },
