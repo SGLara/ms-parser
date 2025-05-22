@@ -1,5 +1,5 @@
 {
-  "name": "ms-parser",
+  "name": "@sglara/ms-parser",
   "version": "0.0.1",
   "description": "A lightweight TypeScript package for parsing time durations into milliseconds",
   "type": "module",
